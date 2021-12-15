@@ -1,9 +1,10 @@
+import Input from "../../component/Input"
+
+
 export default function Home() {
   return (
-    <div className="container flex items-center p-4 mx-auto min-h-screen justify-center">
-        <h1 className="font-mono text-xl code">
-          This  <span className="text-purple-700">application </span> is demo from vercel
-        </h1>
+    <div className="container flex items-center p-4 mx-auto h-4/6 justify-center">
+        <Input/>
     </div>
   )
 }

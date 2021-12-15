@@ -1,6 +1,11 @@
+body {
+    margin: 0%;
+    padding-left: 0%;
+}
+/* My Styls start re */
+re-bg-grey{
+    background-color: black    
+}
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-
-/* Your own custom component styles */
-
 @import 'tailwindcss/utilities';
