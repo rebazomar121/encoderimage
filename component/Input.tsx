@@ -5,12 +5,14 @@ import Img_url from "../public/file.png"
 
 const Input: React.FC = () => {
     return <div>
-        <div className="flex text-center">
+         {/* this is uplode */} 
+        <div className=" text-center">
             <p className='text-center m-2'>Uplode Your file hare</p>
             <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"> Uplode</button>
         </div>
+        {/* this is link you can uplode in hare */} 
         <div className="py-20 bg-white px-2">
-            <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
+            <div className="">
                 <div className="md:flex">
                     <div className="p-3">
                         <div className="relative border-dotted h-48 rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
@@ -22,6 +24,7 @@ const Input: React.FC = () => {
                 </div>
             </div>
         </div>
+       
     </div>
 }
 export default Input
