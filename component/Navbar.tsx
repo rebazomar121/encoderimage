@@ -9,15 +9,12 @@ const Navbar: React.FC = () => {
     }
 
     return <div className="bg-gray-300">
-        <button onClick={HandletoClickMobileNavbar} className="p-6 text-2xl cursor-pointer hover:bg-gray-500 active:bg-gray-500 outline-none"> <GiHamburgerMenu /> </button>
-        <div className={navbar_mobile === false ? "hidden" : "duration-1000 transform hover:scale-125 transition ease-linear"}>
-            <ul className="block p-1 text-xl w-full duration-1000 transform hover:scale-125 transition ease-linear">
+        <button onClick={HandletoClickMobileNavbar} className="md:hidden p-6 text-2xl cursor-pointer hover:bg-gray-400 active:bg-gray-400 outline-none"> <GiHamburgerMenu /> </button>
+            <ul className={navbar_mobile === false ? "block md:flex p-1 text-xl w-full hidden" : "block md:flex p-1 text-xl w-full"}>
                 <li className="m-7" >Home</li>
                 <li className="m-7">About App</li>
                 <li className="m-7">Feedback</li>
             </ul>
-        </div>
-
     </div>
 }
 export default Navbar
