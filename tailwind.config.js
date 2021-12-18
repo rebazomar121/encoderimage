@@ -4,5 +4,7 @@ module.exports = {
     extend: {},
   },
   variants: ["responsive", "group-hover", "hover", "focus"],
-  plugins: [],
+  plugins: [
+    require('@themesberg/flowbite/plugin')
+],
 }

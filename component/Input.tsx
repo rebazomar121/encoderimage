@@ -32,7 +32,7 @@ const Input: React.FC = () => {
         <div className=" text-center p-7 md:p-32 ">
             <p className='text-center m-2'>You can uplode file or imgae</p>
             <p className='text-red-500'>Note</p>
-            <p>your file and imgae are storing on your device</p>
+            <p>your file and image are storing on your device</p>
             <p>this is not encrypt it's just decode , so becarfule do not share your decode string with other</p>
         </div>  
         {/* this is link you can uplode in hare */} 
