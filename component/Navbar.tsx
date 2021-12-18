@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 import Link from "next/link"
 import Image from "next/image"
-import Minion_url_img from "../public/Minion2.png"
+import Minion_url_img from "../public/minion2.png"
 
 const Navbar: React.FC = () => {
     // to active mobile navbar 
