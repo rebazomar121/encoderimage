@@ -1,10 +1,9 @@
 import React from 'react'
 
 const ShowData:React.FC = () => {
-    return (
-        <div>
+    return (<div>
             
-        </div>
+    </div>
     )
 }
 export default ShowData
