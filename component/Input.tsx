@@ -8,6 +8,7 @@ import Minion_url_img from "../public/minion2.png"
 const Input: React.FC = () => {
     // UserContext
     const AppState: any = useContext(UserContext)
+    // encoder genarator
     const EncoderFileBase64 = (file) => {
         // make reader to reader exernal
         console.log("hare")
@@ -16,6 +17,7 @@ const Input: React.FC = () => {
             reader.readAsDataURL(file);
             reader.onload = () => {
                 const Base64 = reader.result
+                AppState.setStringFile(Base64)
                 console.log(Base64)
             }
             // if we have error 
@@ -24,6 +26,7 @@ const Input: React.FC = () => {
             }
         }
     }
+    // get data
     const Handlegetdata = (mydata) => {
         console.log(mydata)
         AppState.setsendfile(mydata)
