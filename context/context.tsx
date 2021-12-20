@@ -6,14 +6,17 @@ export const UserContext = createContext({});
 export const UserProvider:React.FC = ({ children }) => {
   // all data we want to share
     // for test
-  const [sendfile,setsendfile]=useState([])
+  const [sendfile,setsendfile]=useState(null)
+  const [StringFile,setStringFile]=useState(null)
 
   
   return (
     <UserContext.Provider
       value={{
             sendfile,
-            setsendfile
+            setsendfile,
+            StringFile,
+            setStringFile
         }}
     >
       {children}
