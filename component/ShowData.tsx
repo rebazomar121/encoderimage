@@ -43,7 +43,7 @@ const ShowData: React.FC = () => {
                         Name File
                     </td>
                     <td className="border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
-                        {AppState.sendfile.name < 10 ?  AppState.sendfile.name :  AppState.sendfile.name.substring(0,10)+"..." || "No Value"}
+                        {AppState.sendfile.name < 10 ?  AppState.sendfile.name :  AppState.sendfile.name.substring(0,10)+".." || "No Value"}
                     </td>
                 </tr>
                 <tr className="text-gray-700">
