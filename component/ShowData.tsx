@@ -15,17 +15,11 @@ const ShowData: React.FC = () => {
     }
     // Click to copy 
     const HandleToCopy = async() =>{
+        if(AppState.StringFile !== null)
+        {
             await navigator.clipboard.writeText(AppState.StringFile);
             alert('Text copied');
-            await window.localStorage.setItem("lastitem",JSON.stringify(
-                {
-                    name:name,
-                    type:AppState.sendfile.type,
-                    size:AppState.sendfile.size,
-                    lastupdate:AppState.sendfile.lastModified,
-                    copied:AppState.StringFile
-                }
-        ))
+        }
     }
     // return hare
     
@@ -35,7 +29,7 @@ const ShowData: React.FC = () => {
                 <tr>
                     <td></td>
                     <td>   <button onClick={HandleToCopy} type="button" className="text-2xl py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                        Save & Copy
+                         Copy
                     </button> </td>
                 </tr>
                 <tr>
