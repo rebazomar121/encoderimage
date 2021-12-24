@@ -10,7 +10,7 @@ const Layout: React.FC = ({children}) => {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="icon" href="../public/icon.ico"/>
         </Head>
-        <main className="bg-grey-500 font-mono h-screen justify-between mb-72">
+        <main className="bg-grey-500 font-mono h-screen justify-between mb-80">
             <Navbar/>
             {children}
             <Footer/>
