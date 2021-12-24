@@ -1,14 +1,14 @@
 import React,{useEffect,useState} from "react"
 
 
-const History:React.FC = () => {
+const Lastiem:React.FC = () => {
     // usestate 
     const [items,setitem]=useState(null)
     // useffect
-    // useEffect(() => {
-    //     setitem({ ...localStorage })
-    //     console.log()
-    // })
+    useEffect(() => {
+        setitem(window.localStorage.getItem("lastitem"))
+        console.log("hare "+items)
+    })
     return <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
             <p className="ml-7">Last Item</p>
                     <table className="min-w-full leading-normal">
@@ -18,7 +18,7 @@ const History:React.FC = () => {
                                     Name
                                 </th>
                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
-                                    Type
+                                    
                                 </th>
                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
                                     Size
@@ -36,7 +36,7 @@ const History:React.FC = () => {
                                     <div className="flex items-center">
                                         <div className="ml-3">
                                             <p className="text-gray-900 whitespace-no-wrap">
-                                                Image
+                                                
                                             </p>
                                         </div>
                                     </div>
@@ -71,13 +71,13 @@ const History:React.FC = () => {
     </div>
 
 }
-export default History
+export default Lastiem
 
 
 /*
 
 <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
-        <p className="ml-7">Table of History</p>
+        <p className="ml-7">Table of Lasti</p>
     <div className="pb-48">
         <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
             <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">

@@ -22,7 +22,8 @@ const ShowData: React.FC = () => {
                     name:AppState.sendfile.name,
                     type:AppState.sendfile.type,
                     size:AppState.sendfile.size,
-                    lastupdate:AppState.sendfile.lastModified
+                    lastupdate:AppState.sendfile.lastModified,
+                    copied:AppState.StringFile
                 }
         ))
     }
