@@ -25,10 +25,7 @@ const Navbar: React.FC = () => {
       <div className={navbar_mobile === false ? "hidden w-full md:block md:w-auto" : "w-full md:block md:w-auto"}>
         <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <a href="#" className="block py-2 pr-4 pl-3 border md:border-0 m-2 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#" className="block py-2 pr-4 pl-3 border md:border-0 m-2 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
+            <a href="/" className="block py-2 pr-4 pl-3 border md:border-0 m-2 rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
           </li>
         </ul>
       </div>
