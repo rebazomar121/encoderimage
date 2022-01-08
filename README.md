@@ -1,3 +1,7 @@
+## EncoderImage
+Encoder Image its idea to change png to text , you can use to change type of photo or file to text
+
+
 ## Getting Started
 Install dependencies:
 ```bash
